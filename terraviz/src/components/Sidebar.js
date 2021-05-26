@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { IoIosArrowDropleft } from 'react-icons/io';
+import { IoIosArrowDropleft, IoIosArrowDropright } from 'react-icons/io';
 import './Sidebar.css';
 
 
@@ -10,6 +10,8 @@ function Sidebar() {
     return (
         <>
         <div className="Sidebar">
+        <IoIosArrowDropright className='nav-toggle' onClick={closeSidebar} />
+        </div>
          <nav className = {sidebar ? 'nav active' : 'nav'}>
              <ul className = 'nav-items'>
                  <li className='nav-toggle' >
@@ -20,7 +22,7 @@ function Sidebar() {
                  <li className='nav-list'>Summary</li>
              </ul>
          </nav>
-        </div>
+        
         </>
     )
 }
