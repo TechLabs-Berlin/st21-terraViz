@@ -1,0 +1,31 @@
+.nav {
+    background-color: teal;
+    width: 350px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    transition: 1s;
+}
+
+.nav.active{
+    left: -100%;
+    transition: 1s;
+}
+
+.nav-toggle {
+    font-size: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    height: 30px;
+}
