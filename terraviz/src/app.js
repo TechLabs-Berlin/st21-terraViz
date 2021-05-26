@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import Map from "./map.js";
 
-class Hello extends React.Component {
-    render() {
-        return (
-            <h1>Hello, we are TerraViz</h1>
-        )
-    }
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Map />
+      </div>
+    );
+  }
 }
 
-export default Hello;
+export default App;
