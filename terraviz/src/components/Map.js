@@ -1,7 +1,9 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
+import "./Map.css";
 // Insert your access token here
-mapboxgl.accessToken = "";
+mapboxgl.accessToken =
+  "pk.eyJ1IjoibW9vbWlhIiwiYSI6ImNrcDB6bTQzYTBrem4ydm52N2V2dDluNHQifQ.dxGiFQ76bWYmgAgxvJlVbg";
 
 // Initialize base map with basic settings
 const Map = () => {

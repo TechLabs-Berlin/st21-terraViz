@@ -11,11 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.map-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 80%;
-}
