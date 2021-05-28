@@ -9,9 +9,8 @@ function Sidebar() {
 
     return (
         <>
-        <div className="Sidebar">
         <IoIosArrowDropright className='nav-toggle' onClick={closeSidebar} />
-        </div>
+        <div className="Sidebar">
          <nav className = {sidebar ? 'nav active' : 'nav'}>
              <ul className = 'nav-items'>
                  <li className='nav-toggle' >
@@ -22,7 +21,7 @@ function Sidebar() {
                  <li className='nav-list'>Summary</li>
              </ul>
          </nav>
-        
+         </div>
         </>
     )
 }

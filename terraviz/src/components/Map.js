@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import "./Map.css";
+import Sidebar from "./Sidebar";
+import "./Sidebar.css";
 // Insert your access token here
-mapboxgl.accessToken = "";
+mapboxgl.accessToken = "pk.eyJ1Ijoic2VvbmdldW5raW1teSIsImEiOiJja3AzdHExOW0wNjFpMndwbGttZWNmam1nIn0.IFWoSAK80Fo5aR1Js_GzLQ";
 
 // Initialize base map with basic settings
 const Map = () => {
@@ -18,7 +20,8 @@ const Map = () => {
     });
   });
   return (
-    <div>
+    <div className="wrapper">
+      <Sidebar />
       <div ref={mapContainer} className="map-container" />
     </div>
   );
