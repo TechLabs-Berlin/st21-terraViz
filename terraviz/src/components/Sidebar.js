@@ -5,16 +5,16 @@ import './Sidebar.css';
 
 function Sidebar() {
     const [sidebar, setSidebar] = useState(false);
-    const closeSidebar = () => setSidebar(!sidebar)
+    const toggleSidebar = () => setSidebar(!sidebar)
 
     return (
         <>
-        <IoIosArrowDropright className='nav-toggle' onClick={closeSidebar} />
+        <IoIosArrowDropright className={sidebar ? 'nav-open' : 'hidden'} onClick={toggleSidebar} />
         <div className="Sidebar">
          <nav className = {sidebar ? 'nav active' : 'nav'}>
              <ul className = 'nav-items'>
                  <li className='nav-toggle' >
-                  <IoIosArrowDropleft onClick={closeSidebar} />
+                  <IoIosArrowDropleft onClick={toggleSidebar} />
                  </li>
                  <li className='nav-list'>Legend</li>
                  <li className='nav-list'>Chart</li>
