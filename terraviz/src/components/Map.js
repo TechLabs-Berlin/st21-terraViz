@@ -4,7 +4,8 @@ import "./Map.css";
 import Sidebar from "./Sidebar";
 import "./Sidebar.css";
 // Insert your access token here
-mapboxgl.accessToken = "";
+const map_token = process.env.REACT_APP_API_KEY;
+mapboxgl.accessToken = map_token;
 
 // Initialize base map with basic settings
 const Map = () => {
