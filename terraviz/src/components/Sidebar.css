@@ -9,6 +9,12 @@
     position: relative;
     top: 0;
     transition: 1s;
+    opacity: 0.8;
+    background: radial-gradient(
+      circle at top right,
+      #0c4271,
+      #f2ff
+    )
 }
 
 .nav.active{
@@ -30,7 +36,8 @@
   display: flex;
   position: fixed;
   z-index: 1;
-  color: #0c4271;
+  color: purple;
+  opacity: 0.8;
 }
 
 .hidden {
@@ -48,6 +55,12 @@
     border: 2px solid #fff;
     background-color: #f9dfdc;
     border-radius: 5px;
+    background: radial-gradient(
+      circle at top right,
+      #fff,
+        pink
+    )
+   
 }
 
 .nav-list li {

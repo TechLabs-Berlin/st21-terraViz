@@ -43,8 +43,13 @@ const Map = () => {
           type: "circle",
           paint: {
             "circle-color": "purple",
+            "circle-stroke-color" : "pink",
+            "circle-opacity" : 0.8,
+            "circle-radius" : 7,
+            "circle-stroke-width": 2
           },
           layout: {},
+         
         });
       })
       .catch(err => console.error(err));
