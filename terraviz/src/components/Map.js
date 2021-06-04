@@ -4,6 +4,7 @@ import "./Map.css";
 import Sidebar from "./Sidebar";
 import "./Sidebar.css";
 
+
 // Insert your access token here
 mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
 
@@ -27,8 +28,31 @@ const Map = () => {
       zoom: 1,
     });
 
+    //Fetch .json file and load the data as circle layer
+    defaultMap.on('load', function() {
+      fetch('mock.json')
+      .then(res => res.json())
+      .then(data => {
+        defaultMap.addSource('point', {
+          type : 'geojson',
+          data: data
+        });
+        defaultMap.addLayer({
+          id: "circles",
+          source: "point",
+          type: "circle",
+          paint: {
+            "circle-color": "purple",
+          },
+          layout: {},
+        });
+      })
+      .catch(err => console.error(err));
+  });
+
     setMap(defaultMap);
   }, [map]);
+ 
 
   // Making our map responsive to toggling the sidebar
   useEffect(() => {
