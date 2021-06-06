@@ -4,7 +4,6 @@ import "./Map.css";
 import Sidebar from "./Sidebar";
 import "./Sidebar.css";
 
-
 // Insert your access token here
 mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
 
@@ -29,42 +28,40 @@ const Map = () => {
     });
 
     //Fetch .json file and load the data as circle layer
-    defaultMap.on('load', function() {
-      fetch('mock.json')
-      .then(res => res.json())
-      .then(data => {
-        defaultMap.addSource('point', {
-          type : 'geojson',
-          data: data
-        });
-        defaultMap.addLayer({
-          id: "circles",
-          source: "point",
-          type: "circle",
-          paint: {
-            "circle-color": "purple",
-            "circle-stroke-color" : "pink",
-            "circle-opacity" : 0.8,
-            "circle-radius" : 7,
-            "circle-stroke-width": 2
-          },
-          layout: {},
-         
-        });
-      })
-      .catch(err => console.error(err));
-  });
+    defaultMap.on("load", function () {
+      fetch("mock.json")
+        .then((res) => res.json())
+        .then((data) => {
+          defaultMap.addSource("point", {
+            type: "geojson",
+            data: data,
+          });
+          defaultMap.addLayer({
+            id: "circles",
+            source: "point",
+            type: "circle",
+            paint: {
+              "circle-color": "purple",
+              "circle-stroke-color": "pink",
+              "circle-opacity": 0.8,
+              "circle-radius": 7,
+              "circle-stroke-width": 2,
+            },
+            layout: {},
+          });
+        })
+        .catch((err) => console.error(err));
+    });
 
     setMap(defaultMap);
   }, [map]);
- 
 
   // Making our map responsive to toggling the sidebar
   useEffect(() => {
     if (map !== null) {
       map.resize();
     }
-  }, [map]);
+  }, [map, sidebar]);
 
   return (
     <div className="wrapper">
