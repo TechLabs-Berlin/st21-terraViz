@@ -1,17 +1,15 @@
 import React, { useState, useRef, useEffect } from "react";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import "./Map.css";
-import Sidebar from "./Sidebar";
-import "./Sidebar.css";
+
 
 // Insert your access token here
 mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
 
 const Map = () => {
   const mapContainer = useRef(null);
-  const [sidebar, setSidebar] = useState(false);
   const [map, setMap] = useState(null);
-  const onToggleSidebar = () => setSidebar(!sidebar);
+
 
   useEffect(() => {
     // Prevent the map from rerendering every single time
@@ -41,10 +39,10 @@ const Map = () => {
             source: "point",
             type: "circle",
             paint: {
-              "circle-color": "purple",
+              "circle-color": "#E86A62",
               "circle-stroke-color": "pink",
               "circle-opacity": 0.8,
-              "circle-radius": 7,
+              "circle-radius": 17,
               "circle-stroke-width": 2,
             },
             layout: {},
@@ -61,12 +59,12 @@ const Map = () => {
     if (map !== null) {
       map.resize();
     }
-  }, [map, sidebar]);
+  }, [map]);
 
   return (
-    <div className="wrapper">
-      <Sidebar onToggleSidebar={onToggleSidebar} sidebar={sidebar} />
-      <div ref={mapContainer} className="map-container"></div>
+    <div>
+      <div ref={mapContainer} className="map-container">
+      </div>
     </div>
   );
 };

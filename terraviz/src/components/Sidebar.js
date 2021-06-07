@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import "./Sidebar.css";
 
-function Sidebar(props) {
+function Sidebar() {
+  const [sidebar, setSidebar] = useState(false);
+  const onToggleSidebar = () => setSidebar(!sidebar);
   return (
     <>
       <IoIosArrowDropright
-        className={props.sidebar ? "nav-open" : "hidden"}
-        onClick={props.onToggleSidebar}
+        className={sidebar ? "nav-open" : "hidden"}
+        onClick={onToggleSidebar}
       />
       <div className="Sidebar">
-        <nav className={props.sidebar ? "nav active" : "nav"}>
+        <nav className={sidebar ? "nav active" : "nav"}>
           <ul className="nav-items">
           <div className="title">
           <h1>TerraViz</h1>
             <li className="nav-toggle">
-              <IoIosArrowDropleft onClick={props.onToggleSidebar} />
+              <IoIosArrowDropleft onClick={onToggleSidebar} />
             </li>
             </div>
            

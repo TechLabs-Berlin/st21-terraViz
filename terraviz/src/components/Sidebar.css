@@ -1,13 +1,16 @@
 
 
 .nav {
-  width: 300px;
-  height: 100vh; 
+    width: 300px;
+    height: 100vh; 
+    top: 20px;
+    left: 20px;
     display: flex;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    z-index: 1;
     transition: 1s;
-    opacity: 0.8;
+    opacity: 0.9;
     background: linear-gradient(180deg, #254A6B 0%, #183855 100%);
     border-radius: 20px;
     font-family: "Rubik";
