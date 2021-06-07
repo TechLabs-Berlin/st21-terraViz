@@ -28,7 +28,6 @@
     font-size: 50px;
     list-style: none;
     color: #fff;
-
 }
 
 .nav-open {
@@ -38,6 +37,8 @@
   z-index: 1;
   color: #fff;
   opacity: 0.8;
+  top: 20px;
+  left: 10px;
 }
 
 .hidden {
@@ -85,4 +86,5 @@
 .nav-list span {
   color: darkgray;
   font-size: 0.8rem;
+  font-style: oblique;
 }
