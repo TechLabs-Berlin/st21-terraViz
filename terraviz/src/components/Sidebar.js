@@ -12,29 +12,33 @@ function Sidebar(props) {
       <div className="Sidebar">
         <nav className={props.sidebar ? "nav active" : "nav"}>
           <ul className="nav-items">
+          <div className="title">
+          <h1>TerraViz</h1>
             <li className="nav-toggle">
               <IoIosArrowDropleft onClick={props.onToggleSidebar} />
             </li>
-            <h1>Terraviz</h1>
+            </div>
+           
             <div className="nav-list">
-              <li>Legend</li>
+              <li>The problem</li>
+              <span>Where is our project grounded?</span>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{" "}
+              Climate change is THE largest problem of humanity.
+              Making the future of our planet tangible is one of the psychological barriers that have made climate change into an elusive problem.  
               </p>
             </div>
             <div className="nav-list">
-              <li>Chart</li>
+              <li>Our product</li>
+              <span>What we built</span>
+              <p>
+              We visualize the impact climate change has on our planet with a web-application that makes planet data easily accessible and visually attractive for users.
+              </p>
             </div>
             <div className="nav-list">
-              <li>Summary</li>
+              <li>How To</li>
+              <span>How the app works</span>
               <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+              We visualize the impact climate change has on our planet with a web-application that makes planet data easily accessible and visually attractive for users.
               </p>
             </div>
           </ul>

@@ -1,20 +1,18 @@
 
 
 .nav {
-    background-color: #0c4271;
-    width: 350px;
-    height: 100vh;
+  width: 300px;
+  height: 100vh; 
     display: flex;
     justify-content: center;
     position: relative;
-    top: 0;
     transition: 1s;
     opacity: 0.8;
-    background: radial-gradient(
-      circle at top right,
-      #0c4271,
-      #f2ff
-    )
+    background: linear-gradient(180deg, #254A6B 0%, #183855 100%);
+    border-radius: 20px;
+    font-family: "Rubik";
+    line-height: 19px;
+
 }
 
 .nav.active{
@@ -26,9 +24,8 @@
 .nav-toggle {
     font-size: 50px;
     list-style: none;
-    display: flex;
-    justify-content: flex-end;
     color: #fff;
+
 }
 
 .nav-open {
@@ -36,7 +33,7 @@
   display: flex;
   position: fixed;
   z-index: 1;
-  color: purple;
+  color: #fff;
   opacity: 0.8;
 }
 
@@ -48,28 +45,41 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     list-style: none;
     padding: 10px;
     margin: 30px 0;
-    border: 2px solid #fff;
-    background-color: #f9dfdc;
-    border-radius: 5px;
-    background: radial-gradient(
-      circle at top right,
-      #fff,
-        pink
-    )
+    color: #fff;
    
 }
 
 .nav-list li {
   font-size: 1.5rem;
   font-weight: bold;
-  color: purple;
+  color: #fff;
 }
 
 .nav-items {
-  margin: 30px;
-  padding: 0;
+  padding: 20px;
+  height: 723px;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 30px 0;
+}
+
+.title h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.nav-list span {
+  color: darkgray;
+  font-size: 0.8rem;
 }
