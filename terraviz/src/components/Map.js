@@ -20,7 +20,7 @@ const Map = () => {
     // Initialize base map with basic settings, render it into mapContainer
     const defaultMap = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/seongeunkimmy/ckpmkdcgr5rbd17rtqywpy8yx/draft",
+      style: "mapbox://styles/terraviz/ckpmos6qm1n9t17m4a1r2j3tj",
       center: [17, 30],
       zoom: 1,
     });
