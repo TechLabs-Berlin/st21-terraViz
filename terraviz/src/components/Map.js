@@ -2,14 +2,12 @@ import React, { useState, useRef, useEffect } from "react";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import "./Map.css";
 
-
 // Insert your access token here
 mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
 
 const Map = () => {
   const mapContainer = useRef(null);
   const [map, setMap] = useState(null);
-
 
   useEffect(() => {
     // Prevent the map from rerendering every single time
@@ -54,17 +52,9 @@ const Map = () => {
     setMap(defaultMap);
   }, [map]);
 
-  // Making our map responsive to toggling the sidebar
-  useEffect(() => {
-    if (map !== null) {
-      map.resize();
-    }
-  }, [map]);
-
   return (
     <div>
-      <div ref={mapContainer} className="map-container">
-      </div>
+      <div ref={mapContainer} className="map-container"></div>
     </div>
   );
 };

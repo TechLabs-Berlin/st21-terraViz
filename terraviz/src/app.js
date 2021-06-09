@@ -1,15 +1,17 @@
 import React from "react";
-import Map from "./components/Map.js";
+import Sidebar from "./components/Sidebar.js";
 import CountrySwitch from "./components/CountrySwitch.js";
+import TimeSlider from "./components/TimeSlider.js";
+import Map from "./components/Map.js";
 import "./components/CountrySwitch.css";
 import "./app.css";
-import Sidebar from "./components/Sidebar.js"
 
 const App = () => {
   return (
     <div>
-      <CountrySwitch />
       <Sidebar />
+      <CountrySwitch />
+      <TimeSlider />
       <Map />
     </div>
   );
