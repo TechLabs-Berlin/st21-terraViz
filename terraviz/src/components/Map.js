@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar";
 import "./Sidebar.css";
 
 // Insert your access token here
-mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
+mapboxgl.accessToken = "pk.eyJ1IjoidGVycmF2aXoiLCJhIjoiY2twbW9ldG5vMGsyeDJ3cXF2eTBtNmozaSJ9.cuNhWme-R-RK02H3qWxHWw";
 
 const Map = () => {
   const mapContainer = useRef(null);
