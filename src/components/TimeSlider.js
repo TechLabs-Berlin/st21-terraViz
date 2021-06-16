@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IoIosPlay } from "react-icons/io";
+import { IoIosPlay, IoIosPause } from "react-icons/io";
 import "./TimeSlider.css";
 
 const TimeSlider = () => {
@@ -13,6 +13,7 @@ const TimeSlider = () => {
           min="1750"
           max="2013"
           className="slider-range"
+          value={currentYear}
           onChange={(e) => setCurrentYear(e.target.value)}
         />
         <div className="label-wrapper">
@@ -21,8 +22,15 @@ const TimeSlider = () => {
         </div>
       </div>
 
-      <IoIosPlay className="play-button" />
-      <span className="current-date">{currentYear}</span>
+      <button className="button-container">
+        <IoIosPlay className="play-button" />
+      </button>
+
+      <button className="button-container">
+        <IoIosPause className="play-button" />
+      </button>
+
+      <div className="current-date">{currentYear}</div>
     </div>
   );
 };
