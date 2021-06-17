@@ -4,6 +4,24 @@ import "./TimeSlider.css";
 
 const TimeSlider = () => {
   const [currentYear, setCurrentYear] = useState(1750);
+  const [startCounterId, setStartCounterId] = useState(null);
+
+  const handlePlayButton = () => {
+    // console.log(currentYear + 1);
+    const currentStartCounterId = setInterval(() => {
+      setCurrentYear((currentYear) => currentYear + 1);
+      if (currentYear === 2013) {
+        return;
+      }
+    }, 1000);
+
+    setStartCounterId(currentStartCounterId);
+  };
+
+  const stopCounter = () => {
+    clearInterval(startCounterId);
+    // console.log("stopped");
+  };
 
   return (
     <div className="slider-main-container">
@@ -22,11 +40,11 @@ const TimeSlider = () => {
         </div>
       </div>
 
-      <button className="button-container">
+      <button onClick={handlePlayButton} className="button-container">
         <IoIosPlay className="play-button" />
       </button>
 
-      <button className="button-container">
+      <button onClick={stopCounter} className="button-container">
         <IoIosPause className="play-button" />
       </button>
 
