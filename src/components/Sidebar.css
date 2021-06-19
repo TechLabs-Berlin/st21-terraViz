@@ -34,6 +34,7 @@
     font-size: 50px;
     list-style: none;
     color: #fff;
+    cursor: pointer
 }
 
 .nav-open {
