@@ -96,7 +96,7 @@
   font-style: oblique;
 }
 
-/* hide sidebar on smaller screens */
+/* move sidebar to the top on smaller screens */
 @media screen and (max-width: 768px) {
   .nav {
     width: auto;

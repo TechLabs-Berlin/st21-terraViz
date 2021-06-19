@@ -86,3 +86,23 @@ svg.play-button {
   font-size: 12px;
   color: #b3c3ce;
 }
+
+/* responsive component on smaller screens */
+@media screen and (max-width: 768px) {
+  .slider-main-container {
+    width: auto;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    z-index: 1;
+    height: 80px;
+    padding: 20px;
+    background: linear-gradient(180deg, #254a6b 0%, #193956 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+}
