@@ -1,22 +1,24 @@
 .nav {
-    width: 280px;
-    height: 93vh; 
-    top: 20px;
-    left: 20px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    z-index: 1;
-    transition: 1s;
-    opacity: 0.9;
-    background: linear-gradient(180deg, #254A6B 0%, #183855 100%);
-    border-radius: 20px;
-    font-family: "Rubik";
-    line-height: 19px;    
-    /* hide scrollbar for IE, Edge, Firefox */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: scroll;
+  width: 280px;
+  height: auto;
+  top: 20px;
+  left: 20px;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  transition: 1s;
+  opacity: 0.9;
+  background: linear-gradient(180deg, #254a6b 0%, #183855 100%);
+  border-radius: 20px;
+  font-family: "Rubik";
+  line-height: 19px;
+  /* hide scrollbar for IE, Edge, Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  box-sizing: border-box;
 }
 
 /* hide scrollbar for Chrome, Safari, Opera */
@@ -24,17 +26,17 @@
   display: none;
 }
 
-.nav.active{
-    left: -100%;
-    transition: 1s;
-    position: fixed;
+.nav.active {
+  left: -100%;
+  transition: 1s;
+  position: fixed;
 }
 
 .nav-toggle {
-    font-size: 50px;
-    list-style: none;
-    color: #fff;
-    cursor: pointer
+  font-size: 50px;
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
 }
 
 .nav-open {
@@ -53,13 +55,13 @@
 }
 
 .nav-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    list-style: none;
-    margin: 20px 0;
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+  margin: 20px 0;
+  color: #fff;
 }
 
 .nav-list li {
@@ -72,7 +74,6 @@
   padding: 20px;
   height: 723px;
   margin: 0;
- 
 }
 
 .title {
@@ -98,10 +99,11 @@
 /* hide sidebar on smaller screens */
 @media screen and (max-width: 768px) {
   .nav {
-    width: 35%;
-    height: 40px;
+    width: auto;
+    height: 100px;
     top: 20px;
     left: 20px;
+    right: 20px;
     position: absolute;
     z-index: 1;
     opacity: 0.9;
