@@ -1,5 +1,3 @@
-
-
 .nav {
     width: 280px;
     height: 93vh; 
@@ -14,8 +12,16 @@
     background: linear-gradient(180deg, #254A6B 0%, #183855 100%);
     border-radius: 20px;
     font-family: "Rubik";
-    line-height: 19px;
+    line-height: 19px;    
+    /* hide scrollbar for IE, Edge, Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     overflow-y: scroll;
+}
+
+/* hide scrollbar for Chrome, Safari, Opera */
+.nav::-webkit-scrollbar {
+  display: none;
 }
 
 .nav.active{
@@ -86,4 +92,11 @@
   color: #b4c3ce;
   font-size: 0.8rem;
   font-style: oblique;
+}
+
+/* hide sidebar on smaller screens */
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
 }
