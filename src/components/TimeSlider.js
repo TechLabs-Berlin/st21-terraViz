@@ -5,22 +5,32 @@ import "./TimeSlider.css";
 const TimeSlider = () => {
   const [currentYear, setCurrentYear] = useState(1750);
   const [startCounterId, setStartCounterId] = useState(null);
+  const [playButton, setPlayButton] = useState(true);
 
-  const handlePlayButton = () => {
-    // console.log(currentYear + 1);
-    const currentStartCounterId = setInterval(() => {
-      setCurrentYear((currentYear) => currentYear + 1);
-      if (currentYear === 2013) {
-        return;
-      }
-    }, 1000);
+  const onTogglePlayButton = () => {
+    setPlayButton(!playButton);
 
-    setStartCounterId(currentStartCounterId);
-  };
+    // 1. Save the ID of current interval to be able to stop it
+    //    with either the pause button, or when the counter reaches 2013.
+    // 2. Once we reach 2013, the counting should stop
+    //    and the pause button should switch back to play button for a better UX.
+    if (playButton === true) {
+      const currentStartCounterId = setInterval(() => {
+        setCurrentYear((currentYear) => {
+          if (currentYear === 2013) {
+            clearInterval(startCounterId);
+            setPlayButton(true);
+            return currentYear;
+          }
+          return currentYear + 1;
+        });
+      }, 1000);
+      setStartCounterId(currentStartCounterId);
+    }
 
-  const stopCounter = () => {
-    clearInterval(startCounterId);
-    // console.log("stopped");
+    if (playButton === false) {
+      clearInterval(startCounterId);
+    }
   };
 
   return (
@@ -32,7 +42,7 @@ const TimeSlider = () => {
           max="2013"
           className="slider-range"
           value={currentYear}
-          onChange={(e) => setCurrentYear(e.target.value)}
+          onChange={(e) => setCurrentYear(parseInt(e.target.value))}
         />
         <div className="label-wrapper">
           <div className="label-left">1750</div>
@@ -40,12 +50,9 @@ const TimeSlider = () => {
         </div>
       </div>
 
-      <button onClick={handlePlayButton} className="button-container">
-        <IoIosPlay className="play-button" />
-      </button>
-
-      <button onClick={stopCounter} className="button-container">
-        <IoIosPause className="play-button" />
+      <button onClick={onTogglePlayButton} className="button-container">
+        <IoIosPlay className={playButton ? "play-pause-button" : "hidden"} />
+        <IoIosPause className={playButton ? "hidden" : "play-pause-button"} />
       </button>
 
       <div className="current-date">{currentYear}</div>

@@ -68,10 +68,14 @@ input[type="range"]::-ms-thumb {
   cursor: pointer;
 }
 
-.play-button {
+.play-pause-button {
   color: white;
   height: 40px;
   width: 40px;
+}
+
+.hidden {
+  display: none;
 }
 
 .label-wrapper {
