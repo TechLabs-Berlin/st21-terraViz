@@ -7,20 +7,14 @@
   bottom: 30px;
   position: absolute;
   z-index: 1;
-  transition: 1s;
   opacity: 0.9;
   background: linear-gradient(180deg, #254a6b 0%, #183855 100%);
   border-radius: 8px;
   overflow-y: scroll;
   box-sizing: border-box;
   padding: 15px;
-  /* hide scrollbar for IE, Edge, Firefox */
-  /* -ms-overflow-style: none;
-  scrollbar-width: none;
-   */
   /* content properties */
   font-family: "Rubik";
-  /* line-height: 19px; */
   justify-content: center;
   color: #fff;
 }
@@ -46,7 +40,7 @@
 
 .sidebar-visible.hidden {
   left: -100%;
-  transition: 1s;
+  /* transition: 1s; */
   position: fixed;
 }
 
@@ -55,8 +49,6 @@
   position: absolute;
   z-index: 1;
   color: #fff;
-  /* top: 10px; */
-  /* left: 10px; */
   right: 0px;
   cursor: pointer;
 }
@@ -79,60 +71,65 @@
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 500;
-  margin: 10px 0 40px 0;
+  margin: 0.3em 0 1em 0;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.7em;
   font-weight: 500;
-  margin: 30px 0 0 0;
+  margin: 1em 0 0 0;
 }
 
 span {
   color: #b4c3ce;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-style: oblique;
 }
 
-/* move sidebar to the top on smaller screens */
+/* move sidebar to the top on smaller screens,
+and every class name is doing the opposite in this scenario */
 @media screen and (max-width: 768px) {
-  /* .sidebar-visible.hidden {
+  /* this is actually the hidden version on smaller screens */
+  .sidebar-visible {
+    left: -100%;
+  }
+
+  /* this is the default visible on small screens */
+  .sidebar-visible.hidden {
+    /* container properties */
     width: auto;
-    height: 100px;
-    top: 20px;
+    height: 70%;
+    top: 90px;
     left: 20px;
     right: 20px;
     position: absolute;
     z-index: 1;
     opacity: 0.9;
-    border-radius: 20px;
+    background: linear-gradient(180deg, #254a6b 0%, #183855 100%);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 15px;
+    /* content properties */
     font-family: "Rubik";
-    line-height: 19px;
-    background-color: #254a6b;
-  } */
-  .sidebar-visible {
-    left: -100%;
-  }
-
-  .outer-toggle-icon-visible {
-    font-size: 50px;
-    /* display: flex; */
-    position: absolute;
-    z-index: 3;
+    justify-content: center;
     color: #fff;
-    top: 20px;
-    left: 40px;
   }
 
+  /* default hidden on small screens */
+  .outer-toggle-icon-visible {
+    display: none;
+  }
+
+  /* default visible on small screens */
   .outer-toggle-icon-hidden {
     font-size: 50px;
-    /* display: flex; */
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     color: #fff;
     top: 20px;
-    left: 40px;
+    left: 20px;
+    cursor: pointer;
   }
 }
