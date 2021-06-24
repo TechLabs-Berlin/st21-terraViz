@@ -51,8 +51,12 @@ const TimeSlider = () => {
       </div>
 
       <button onClick={onTogglePlayButton} className="button-container">
-        <IoIosPlay className={playButton ? "play-pause-button" : "hidden"} />
-        <IoIosPause className={playButton ? "hidden" : "play-pause-button"} />
+        <IoIosPlay
+          className={playButton ? "play-pause-button" : "button-hidden"}
+        />
+        <IoIosPause
+          className={playButton ? "button-hidden" : "play-pause-button"}
+        />
       </button>
 
       <div className="current-date">{currentYear}</div>
