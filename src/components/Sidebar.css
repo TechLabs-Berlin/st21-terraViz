@@ -1,135 +1,178 @@
-.sidebar-visible {
-  /* container properties */
-  width: 350px;
-  height: auto;
-  top: 20px;
-  left: 20px;
-  bottom: 30px;
-  position: absolute;
-  z-index: 1;
-  opacity: 0.9;
-  background: linear-gradient(180deg, #254a6b 0%, #183855 100%);
-  border-radius: 8px;
-  overflow-y: scroll;
-  box-sizing: border-box;
-  padding: 15px;
-  /* content properties */
-  font-family: "Rubik";
-  justify-content: center;
-  color: #fff;
+
+.nav {
+    width: 280px;
+    height: 93vh; 
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    opacity: 0.9;
+    background: linear-gradient(180deg, #254A6B 0%, #183855 100%);
+    border-radius: 20px;
+    font-family: "Rubik";
+    line-height: 19px;
+    overflow-y: scroll;
 }
 
-/* custom scrollbar for Chrome, Safari, Opera*/
-::-webkit-scrollbar {
-  width: 10px;
+.nav.active{
+    left: -100%;
+    transition: 1s;
+    position: fixed;
 }
 
-::-webkit-scrollbar-track {
-  background-color: transparent;
+.nav-toggle {
+    font-size: 50px;
+    list-style: none;
+    color: #fff;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #16334e;
-  border-radius: 20px;
-  background-clip: content-box;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #142f48;
-}
-
-.sidebar-visible.hidden {
-  left: -100%;
-  /* transition: 1s; */
-  position: fixed;
-}
-
-.inner-toggle-icon {
-  font-size: 50px;
-  position: absolute;
-  z-index: 1;
-  color: #fff;
-  right: 0px;
-  cursor: pointer;
-}
-
-.outer-toggle-icon-visible {
+.nav-open {
   font-size: 50px;
   display: flex;
   position: fixed;
   z-index: 1;
   color: #fff;
+  opacity: 0.8;
   top: 20px;
-  left: 20px;
-  cursor: pointer;
+  left: 10px;
 }
 
-@media screen and (min-width: 769px) {
-  .outer-toggle-icon-hidden {
-    display: none;
-  }
+.hidden {
+  display: none;
 }
 
-h1 {
-  font-size: 2em;
+.mobile-only {
+  display: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.nav-list li {
+  font-size: 24px;
   font-weight: 500;
-  margin: 0.3em 0 1em 0;
+  color: #fff;
 }
 
-h2 {
-  font-size: 1.7em;
+.nav-items {
+  padding: 20px;
+  height: 723px;
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 10px 0;
+}
+
+.title h1 {
+  color: #fff;
+  font-size: 32px;
   font-weight: 500;
-  margin: 1em 0 0 0;
 }
 
-span {
+.nav-list span {
   color: #b4c3ce;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-style: oblique;
 }
 
-/* move sidebar to the top on smaller screens,
-and every class name is doing the opposite in this scenario */
-@media screen and (max-width: 768px) {
-  /* this is actually the hidden version on smaller screens */
-  .sidebar-visible {
-    left: -100%;
-  }
 
-  /* this is the default visible on small screens */
-  .sidebar-visible.hidden {
-    /* container properties */
-    width: auto;
-    height: 70%;
-    top: 90px;
-    left: 20px;
-    right: 20px;
-    position: absolute;
-    z-index: 1;
-    opacity: 0.9;
-    background: linear-gradient(180deg, #254a6b 0%, #183855 100%);
-    border-radius: 8px;
-    box-sizing: border-box;
-    padding: 15px;
-    /* content properties */
-    font-family: "Rubik";
-    justify-content: center;
-    color: #fff;
-  }
-
-  /* default hidden on small screens */
-  .outer-toggle-icon-visible {
+@media screen and (max-width: 600px) {
+  .mobile-hidden {
     display: none;
   }
 
-  /* default visible on small screens */
-  .outer-toggle-icon-hidden {
-    font-size: 50px;
-    position: absolute;
-    z-index: 1;
-    color: #fff;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
+  .mobile-only {
+    display: flex;
   }
+
+  .nav {
+    top: 20px;
+    background: transparent;
+    width: 90%;
+    height: 75vh;
+  }
+
+  .title {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .title h3 {
+    color: #fff;
+    margin: 0;
+    
+  }
+
+  .nav-list {
+    background-color: #183855;
+    opacity: 3;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+
+  .nav-list li {
+    font-weight: 600;
+  }
+  .nav-list p, span {
+    font-weight: 450;
+  }
+
+  /* .icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 90%;
+  margin-top: -35px;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 2px #183855;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #183855;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+@keyframes scroll {
+  0% {
+     opacity: 1
+  }
+   
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  } 
+} */
+
 }

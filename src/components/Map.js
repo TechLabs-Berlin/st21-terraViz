@@ -8,7 +8,7 @@ mapboxgl.accessToken =
 const Map = () => {
   const mapContainer = useRef(null);
   const [map, setMap] = useState(null);
-
+ 
   useEffect(() => {
     // Prevent the map from rerendering every single time
     if (map !== null) {
@@ -32,6 +32,7 @@ const Map = () => {
             type: "geojson",
             data: data,
           });
+          console.log(data.features[0]);
           defaultMap.addLayer({
             id: "circles",
             source: "point",
