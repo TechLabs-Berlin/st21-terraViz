@@ -13,22 +13,23 @@ function Sidebar() {
         className={sidebar ? "nav-open" : "hidden"}
         onClick={onToggleSidebar}
       />
-      
-       
+      <h3 className="mobile-only toMap" onClick={onToggleSidebar}>  ⬅︎  To the Map </h3>
       <div className="Sidebar">
         <nav className={sidebar ? "nav active" : "nav"}>
           <ul className="nav-items">
           <div className="title">
-          <h1> TerraViz</h1>
-          <h3 className="mobile-only" onClick={onToggleSidebar}>  ⬅︎  Map </h3>
+          <h1>TerraViz</h1>
+           
             {/* <div className="icon-scroll"></div> */}
+          
             <li className="nav-toggle">
               <IoIosArrowDropleft className="mobile-hidden" onClick={onToggleSidebar} />
             </li>
             </div>
-          
+       
+            <div className="mobile-only scroll">Scroll Down ⬇︎ </div>
             <div className="nav-list">
-              <li>The problem</li>
+              <li>Story</li>
               <span>Where is our project grounded?</span>
               <p>
               Climate change is THE largest problem of humanity.

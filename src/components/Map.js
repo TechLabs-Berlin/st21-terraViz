@@ -32,7 +32,7 @@ const Map = () => {
             type: "geojson",
             data: data,
           });
-          console.log(data.features[0]);
+          
           defaultMap.addLayer({
             id: "circles",
             source: "point",
