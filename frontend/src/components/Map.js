@@ -116,7 +116,7 @@ const Map = (props) => {
 
       setMap(defaultMap);
     });
-  }, [map]);
+  }, [map, currentYear]);
 
   // This useEffect() takes care of the data filtering after the initial load has happened
   useEffect(() => {
