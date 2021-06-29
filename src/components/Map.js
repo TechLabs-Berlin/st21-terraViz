@@ -25,7 +25,7 @@ const Map = () => {
 
     //Fetch .json file and load the data as circle layer
     defaultMap.on("load", function () {
-      fetch("TestSet.json")
+      fetch("export_countries.json")
         .then((res) => res.json())
         .then((data) => {
           defaultMap.addSource("point", {
