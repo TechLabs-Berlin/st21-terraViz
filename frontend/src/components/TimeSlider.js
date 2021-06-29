@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { IoIosPlay, IoIosPause } from "react-icons/io";
 import "./TimeSlider.css";
 
-const TimeSlider = () => {
-  const [currentYear, setCurrentYear] = useState(1750);
+const TimeSlider = (props) => {
+  const { currentYear, setCurrentYear } = props;
   const [startCounterId, setStartCounterId] = useState(null);
   const [playButton, setPlayButton] = useState(true);
 
