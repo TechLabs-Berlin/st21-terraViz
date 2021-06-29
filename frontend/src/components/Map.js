@@ -25,7 +25,7 @@ const Map = () => {
 
     //Fetch .json file and load the data as circle layer
     defaultMap.on("load", function () {
-      fetch("TestSet.json")
+      fetch("export_countries.json")
         .then((res) => res.json())
         .then((data) => {
           defaultMap.addSource("point", {
@@ -37,11 +37,23 @@ const Map = () => {
             source: "point",
             type: "circle",
             paint: {
-              "circle-color": "#E86A62",
-              "circle-stroke-color": "pink",
+              "circle-color": [
+                "interpolate",
+                ["linear"],
+                ["get", "temp"],
+                3,
+                "#7BBAD8",
+                7,
+                "#A1D4EC",
+                9,
+                "#F5E9C8",
+                11,
+                "#F29488",
+                15,
+                "#E86A62",
+              ],
               "circle-opacity": 0.8,
               "circle-radius": 17,
-              "circle-stroke-width": 2,
             },
             layout: {},
           });
