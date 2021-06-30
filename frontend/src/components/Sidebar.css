@@ -1,31 +1,50 @@
-
 /* Sidebar when it's on */
 .nav {
-    width: 350px;
-    height: 100vh;
-    /* box-sizing: border-box; */
-    bottom: 30px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    z-index: 1;
-    opacity: 1;
-    background: linear-gradient(to right, #183855 100%, #254A6B 0%);
-    font-family: "Rubik";
-    overflow-y: scroll;
+  width: 350px;
+  height: 100vh;
+  /* box-sizing: border-box; */
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  background: linear-gradient(to right, #183855 100%, #254a6b 0%);
+  font-family: "Rubik";
+  overflow-y: scroll;
+  border-radius: 8px;
+}
+
+/* custom scrollbar for Chrome, Safari, Opera*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #16334e;
+  border-radius: 20px;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #142f48;
 }
 
 /* Sidebar when it's off */
-.nav-close{
-    left: -100%;
-    position: fixed;
+.nav-close {
+  left: -100%;
+  position: fixed;
 }
 
 /* Inner toggle icon */
 .nav-toggle {
-    font-size: 50px;
-    color: #fff;
-    cursor: pointer;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* Outer toggle icon */
@@ -63,19 +82,19 @@
 }
 
 .nav-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 20px 0;
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0;
+  color: #fff;
 }
 
 .nav-list h2 {
   font-size: 1.5rem;
   font-weight: 500;
   color: #fff;
-  margin: 5px 0;;
+  margin: 5px 0;
 }
 
 .nav-list span {
@@ -100,7 +119,7 @@
 
 /* Siderbar for mobile version */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 770px) {
   .arrow {
     display: hidden;
   }
@@ -112,12 +131,12 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
   .mobile-hidden {
     display: none;
   }
 
-/* 
+  /* 
 To the Map (mobile version toggle) */
   .toMap {
     display: flex;
@@ -128,11 +147,11 @@ To the Map (mobile version toggle) */
   }
 
   .toMap span {
-  color: #fff;
-  font-size: 1.0rem;
-  font-weight: 500;
-  padding: 0 5px;
-}
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 5px;
+  }
 
   .nav-container {
     margin: 0 15px;
@@ -150,9 +169,9 @@ To the Map (mobile version toggle) */
   }
 
   .nav-open span {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
-  
+
   .title {
     display: flex;
     flex-direction: column;
@@ -173,57 +192,55 @@ To the Map (mobile version toggle) */
   .nav-list h2 {
     font-weight: 600;
   }
-  .nav-list p, span {
+  .nav-list p,
+  span {
     font-weight: 450;
   }
 
   .mobile-only {
-     display: flex; 
-   }
-
-
-.arrow,
-.arrow:before {
-  position: absolute;
-  left: 50%;
-}
-
-.arrow {
-  width: 20px;
-  height: 20px;
-  top: 98%;
-  margin: -20px 0 0 -20px;
-  -webkit-transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: 3px #fff solid;
-  border-bottom: 3px #fff solid;
-}
-
-.arrow:before {
-  content: "";
-  width: 18px;
-  height: 18px;
-  top: 50%;
-  margin: -5px 0 0 -5px;
-  border-left: none;
-  border-top: none;
-  border-right: 2px #fff solid;
-  border-bottom: 2px #fff solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow;
-}
-
-@keyframes arrow {
-  0% {
-    opacity: 0;
+    display: flex;
   }
-  100% {
-    opacity: 1;
-    transform: translate(-10px, -10px);
+
+  .arrow,
+  .arrow:before {
+    position: absolute;
+    left: 50%;
+  }
+
+  .arrow {
+    width: 20px;
+    height: 20px;
+    top: 98%;
+    margin: -20px 0 0 -20px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 3px #fff solid;
+    border-bottom: 3px #fff solid;
+  }
+
+  .arrow:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    margin: -5px 0 0 -5px;
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+  }
+
+  @keyframes arrow {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-10px, -10px);
+    }
   }
 }
-
-}
-
