@@ -8,7 +8,7 @@ mapboxgl.accessToken =
 const Map = () => {
   const mapContainer = useRef(null);
   const [map, setMap] = useState(null);
-
+ 
   useEffect(() => {
     // Prevent the map from rerendering every single time
     if (map !== null) {
@@ -25,13 +25,14 @@ const Map = () => {
 
     //Fetch .json file and load the data as circle layer
     defaultMap.on("load", function () {
-      fetch("TestSet.json")
+      fetch("export_countries.json")
         .then((res) => res.json())
         .then((data) => {
           defaultMap.addSource("point", {
             type: "geojson",
             data: data,
           });
+          
           defaultMap.addLayer({
             id: "circles",
             source: "point",
