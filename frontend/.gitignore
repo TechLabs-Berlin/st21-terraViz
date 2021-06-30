@@ -1,9 +1,5 @@
 # local VSCode workspace customization
-<<<<<<< HEAD
-.vscode
-=======
 /.vscode
->>>>>>> main
 
 #api keys
 .env
