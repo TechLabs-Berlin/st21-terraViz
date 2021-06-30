@@ -51,7 +51,7 @@ const Map = (props) => {
       style: "mapbox://styles/terraviz/ckpmos6qm1n9t17m4a1r2j3tj",
       center: [17, 30],
       zoom: 1,
-      // interactive: false,
+      interactive: false,
     });
 
     // Disable zooming on the map
