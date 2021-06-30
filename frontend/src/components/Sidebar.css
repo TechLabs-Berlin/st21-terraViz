@@ -1,0 +1,246 @@
+/* Sidebar when it's on */
+.nav {
+  width: 350px;
+  height: 100vh;
+  /* box-sizing: border-box; */
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  background: linear-gradient(to right, #183855 100%, #254a6b 0%);
+  font-family: "Rubik";
+  overflow-y: scroll;
+  border-radius: 8px;
+}
+
+/* custom scrollbar for Chrome, Safari, Opera*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #16334e;
+  border-radius: 20px;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #142f48;
+}
+
+/* Sidebar when it's off */
+.nav-close {
+  left: -100%;
+  position: fixed;
+}
+
+/* Inner toggle icon */
+.nav-toggle {
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Outer toggle icon */
+.nav-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  top: 20px;
+  left: 10px;
+}
+
+.nav-open span {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Sidebar contents sections */
+.nav-container {
+  height: 100vh;
+  margin: 20px 15px;
+  padding-bottom: 40px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.nav-list h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 5px 0;
+}
+
+.nav-list span {
+  color: #b4c3ce;
+  font-size: 0.8rem;
+  font-style: oblique;
+}
+
+/* Sidebar title */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.title h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+/* Siderbar for mobile version */
+
+@media screen and (min-width: 770px) {
+  .arrow {
+    display: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  /* 
+To the Map (mobile version toggle) */
+  .toMap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .toMap span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 5px;
+  }
+
+  .nav-container {
+    margin: 0 15px;
+  }
+
+  .nav {
+    top: 20px;
+    background: transparent;
+    width: 100%;
+    height: 77vh;
+  }
+
+  .nav-toggle {
+    font-size: 40px;
+  }
+
+  .nav-open span {
+    font-size: 1rem;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    padding: 0 10px;
+  }
+
+  .nav-list {
+    background-color: #183855;
+    opacity: 1;
+    border-radius: 20px;
+    margin: 0 10px 130px 10px;
+    padding: 15px;
+  }
+
+  .nav-list h2 {
+    font-weight: 600;
+  }
+  .nav-list p,
+  span {
+    font-weight: 450;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+
+  .arrow,
+  .arrow:before {
+    position: absolute;
+    left: 50%;
+  }
+
+  .arrow {
+    width: 20px;
+    height: 20px;
+    top: 98%;
+    margin: -20px 0 0 -20px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 3px #fff solid;
+    border-bottom: 3px #fff solid;
+  }
+
+  .arrow:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    margin: -5px 0 0 -5px;
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+  }
+
+  @keyframes arrow {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-10px, -10px);
+    }
+  }
+}

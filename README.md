@@ -10,3 +10,7 @@ Our vision is to make climate change tangible!
 - DS Lukas Hoppe
 - WD Seong-eun Kim
 - WD Timea Varju
+
+## See deployed version
+
+https://dreamy-lewin-096330.netlify.app/
