@@ -1,5 +1,9 @@
 # local VSCode workspace customization
+<<<<<<< HEAD
 .vscode
+=======
+/.vscode
+>>>>>>> main
 
 #api keys
 .env
@@ -26,3 +30,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
+=======
+
+>>>>>>> main

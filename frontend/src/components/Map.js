@@ -38,7 +38,7 @@ const Map = (props) => {
   const { currentYear } = props;
   const mapContainer = useRef(null);
   const [map, setMap] = useState(null);
-
+ 
   useEffect(() => {
     // Prevent the map from rerendering every single time
     if (map !== null) {
@@ -66,7 +66,11 @@ const Map = (props) => {
             type: "geojson",
             data: data,
           });
+<<<<<<< HEAD
 
+=======
+          
+>>>>>>> main
           defaultMap.addLayer({
             id: "country-circles",
             source: "point",
