@@ -7,30 +7,34 @@ mapboxgl.accessToken =
   "pk.eyJ1IjoidGVycmF2aXoiLCJhIjoiY2twbW9ldG5vMGsyeDJ3cXF2eTBtNmozaSJ9.cuNhWme-R-RK02H3qWxHWw";
 
 const COLOR_TEMP = {
-  negativeBig: -2,
-  negative: -1,
+  negativeBigger: -0.12,
+  negativeBig: -0.1,
+  negative: -0.05,
   base: 0,
-  positive: 1,
-  positiveBig: 2,
+  positive: 0.05,
+  positiveBig: 0.1,
+  positiveBigger: 0.12,
 };
 
 const COLOR_HEX = {
-  negativeBig: "#7BBAD8",
-  negative: "#A1D4EC",
+  negativeBigger: "#146B93",
+  negativeBig: "#25A5E1",
+  negative: "#72C5EC",
   base: "#F5E9C8",
-  positive: "#F29488",
-  positiveBig: "#E86A62",
+  positive: "#FC7F79",
+  positiveBig: "#FA382C",
+  positiveBigger: "#B90E05",
 };
 
 const RADIUS_TEMP = {
-  low: -2,
+  low: -0.1,
   base: 0,
-  high: 2,
+  high: 0.1,
 };
 
 const RADIUS_SIZE = {
-  base: 5,
-  change: 10,
+  base: 3,
+  change: 8,
 };
 
 // Main component
@@ -51,11 +55,10 @@ const Map = (props) => {
       style: "mapbox://styles/terraviz/ckpmos6qm1n9t17m4a1r2j3tj",
       center: [-50, 25],
       zoom: 1,
-      interactive: false,
     });
 
     // Disable zooming on the map
-    // defaultMap.scrollZoom.disable();
+    defaultMap.scrollZoom.disable();
 
     //Fetch .json file and load the data as circle layer
     defaultMap.on("load", function () {
