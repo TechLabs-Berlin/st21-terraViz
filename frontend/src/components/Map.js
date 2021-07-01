@@ -7,11 +7,11 @@ mapboxgl.accessToken =
   "pk.eyJ1IjoidGVycmF2aXoiLCJhIjoiY2twbW9ldG5vMGsyeDJ3cXF2eTBtNmozaSJ9.cuNhWme-R-RK02H3qWxHWw";
 
 const COLOR_TEMP = {
-  negativeBig: 3,
-  negative: 7,
-  base: 10,
-  positive: 11,
-  positiveBig: 15,
+  negativeBig: -2,
+  negative: -1,
+  base: 0,
+  positive: 1,
+  positiveBig: 2,
 };
 
 const COLOR_HEX = {
@@ -23,14 +23,14 @@ const COLOR_HEX = {
 };
 
 const RADIUS_TEMP = {
-  low: 3,
-  base: 10,
-  high: 15,
+  low: -2,
+  base: 0,
+  high: 2,
 };
 
 const RADIUS_SIZE = {
   base: 5,
-  change: 25,
+  change: 10,
 };
 
 // Main component
@@ -49,7 +49,7 @@ const Map = (props) => {
     const defaultMap = new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/terraviz/ckpmos6qm1n9t17m4a1r2j3tj",
-      center: [17, 30],
+      center: [-50, 25],
       zoom: 1,
       interactive: false,
     });
@@ -59,7 +59,7 @@ const Map = (props) => {
 
     //Fetch .json file and load the data as circle layer
     defaultMap.on("load", function () {
-      fetch("export_countries.json")
+      fetch("ByCityDataset.json")
         .then((res) => res.json())
         .then((data) => {
           defaultMap.addSource("point", {
