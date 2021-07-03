@@ -7,7 +7,7 @@ import "./components/CountrySwitch.css";
 import "./app.css";
 
 const App = () => {
-  const [currentYear, setCurrentYear] = useState(1750);
+  const [currentYear, setCurrentYear] = useState(1902);
 
   return (
     <div>

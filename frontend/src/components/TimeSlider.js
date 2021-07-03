@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoIosPlay, IoIosPause } from "react-icons/io";
 import "./TimeSlider.css";
 
-const PLAY_SPEED = 100;
+const PLAY_SPEED = 500;
 
 const TimeSlider = (props) => {
   const { currentYear, setCurrentYear } = props;
@@ -40,14 +40,14 @@ const TimeSlider = (props) => {
       <div className="slider-wrapper">
         <input
           type="range"
-          min="1750"
+          min="1902"
           max="2013"
           className="slider-range"
           value={currentYear}
           onChange={(e) => setCurrentYear(parseInt(e.target.value))}
         />
         <div className="label-wrapper">
-          <div className="label-left">1750</div>
+          <div className="label-left">1902</div>
           <div className="label-right">2013</div>
         </div>
       </div>

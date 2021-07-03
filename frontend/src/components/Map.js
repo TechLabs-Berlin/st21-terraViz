@@ -38,7 +38,7 @@ const RADIUS_TEMP = {
 
 const RADIUS_SIZE = {
   base: 3,
-  change: 8,
+  change: 6,
 };
 
 // Main component
@@ -72,6 +72,7 @@ const Map = (props) => {
           defaultMap.addSource("point", {
             type: "geojson",
             data: data,
+            buffer: 0,
           });
 
           defaultMap.addLayer({
