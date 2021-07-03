@@ -7,29 +7,33 @@ mapboxgl.accessToken =
   "pk.eyJ1IjoidGVycmF2aXoiLCJhIjoiY2twbW9ldG5vMGsyeDJ3cXF2eTBtNmozaSJ9.cuNhWme-R-RK02H3qWxHWw";
 
 const COLOR_TEMP = {
-  negativeBigger: -0.12,
-  negativeBig: -0.1,
-  negative: -0.05,
+  negativeBiggest: -0.075,
+  negativeBigger: -0.05,
+  negativeBig: -0.025,
+  negative: -0.01,
   base: 0,
-  positive: 0.05,
-  positiveBig: 0.1,
-  positiveBigger: 0.12,
+  positive: 0.01,
+  positiveBig: 0.025,
+  positiveBigger: 0.05,
+  positiveBiggest: 0.075,
 };
 
 const COLOR_HEX = {
-  negativeBigger: "#146B93",
-  negativeBig: "#25A5E1",
-  negative: "#72C5EC",
-  base: "#F5E9C8",
-  positive: "#FC7F79",
-  positiveBig: "#FA382C",
-  positiveBigger: "#B90E05",
+  negativeBiggest: "#146B93",
+  negativeBigger: "#25A5E1",
+  negativeBig: "#72C5EC",
+  negative: "#A6DAF3",
+  base: "#FFF6F5",
+  positive: "#FDACA8",
+  positiveBig: "#FC7F79",
+  positiveBigger: "#FA382C",
+  positiveBiggest: "#B90E05",
 };
 
 const RADIUS_TEMP = {
-  low: -0.1,
+  low: -0.075,
   base: 0,
-  high: 0.1,
+  high: 0.075,
 };
 
 const RADIUS_SIZE = {
@@ -58,11 +62,11 @@ const Map = (props) => {
     });
 
     // Disable zooming on the map
-    defaultMap.scrollZoom.disable();
+    // defaultMap.scrollZoom.disable();
 
     //Fetch .json file and load the data as circle layer
     defaultMap.on("load", function () {
-      fetch("ByCityDataset.json")
+      fetch("ByCityDataset_Sliced.json")
         .then((res) => res.json())
         .then((data) => {
           defaultMap.addSource("point", {
@@ -79,6 +83,8 @@ const Map = (props) => {
                 "interpolate",
                 ["linear"],
                 ["get", "temp"],
+                COLOR_TEMP.negativeBiggest,
+                COLOR_HEX.negativeBiggest,
                 COLOR_TEMP.negativeBig,
                 COLOR_HEX.negativeBig,
                 COLOR_TEMP.negative,
@@ -89,6 +95,8 @@ const Map = (props) => {
                 COLOR_HEX.positive,
                 COLOR_TEMP.positiveBig,
                 COLOR_HEX.positiveBig,
+                COLOR_TEMP.positiveBiggest,
+                COLOR_HEX.positiveBiggest,
               ],
               "circle-opacity": 0.8,
               "circle-radius": [
