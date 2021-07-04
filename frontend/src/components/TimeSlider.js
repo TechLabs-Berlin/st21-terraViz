@@ -13,7 +13,7 @@ const TimeSlider = (props) => {
     clearInterval(startCounterId);
     setStartCounterId(null);
     setPlayButton(true);
-    setCurrentYear(1750);
+    setCurrentYear(1902);
   }
 
 
