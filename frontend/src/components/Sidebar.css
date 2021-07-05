@@ -3,13 +3,13 @@
   width: 350px;
   height: 100vh;
   /* box-sizing: border-box; */
-  bottom: 30px;
+  bottom: 25px;
   display: flex;
   justify-content: center;
   position: absolute;
   z-index: 1;
   opacity: 1;
-  background: linear-gradient(to right, #183855 100%, #254a6b 0%);
+  background: linear-gradient(to right, #183855 100%, #254a6b);
   font-family: "Rubik";
   overflow-y: scroll;
   border-radius: 8px;

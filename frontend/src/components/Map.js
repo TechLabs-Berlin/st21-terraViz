@@ -60,6 +60,7 @@ const Map = (props) => {
       center: [-50, 25],
       zoom: 1,
     });
+     
 
     // Disable zooming on the map
     // defaultMap.scrollZoom.disable();
@@ -127,6 +128,7 @@ const Map = (props) => {
         .catch((err) => console.error(err));
 
       setMap(defaultMap);
+     
     });
   }, [map, currentYear]);
 
@@ -138,7 +140,7 @@ const Map = (props) => {
 
     map.setFilter("country-circles", ["==", ["get", "year"], currentYear]);
   }, [currentYear, map]);
-
+   
   return (
     <div>
       <div ref={mapContainer} className="map-container"></div>
