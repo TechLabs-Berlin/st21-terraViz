@@ -117,6 +117,62 @@
   font-weight: 500;
 }
 
+/* Legend css */
+
+.legend .legend-title {
+    text-align: left;
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 90%;
+    }
+
+  .legend .legend-scale ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+
+  .legend .legend-scale ul li {
+    display: block;
+    float: left;
+    width: 30px;
+    padding: 12px;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 80%;
+    list-style: none;
+    }
+
+  .legend ul.legend-labels li span {
+    display: block;
+    border-radius: 50%;
+    float: left;
+    height: 30px;
+    width: 30px;
+    }
+ 
+
+  .span-1 {
+    background-color: #25A5E1;
+  }
+  .span-2 {
+    background-color: #A1D4EC;
+  }
+
+  .span-3 {
+    background-color: #F5E9C8;
+  }
+
+  .span-4 {
+    background-color: #F29488;
+  }
+
+ .span-5 {
+   background-color: #FA382C;
+ }
+
+
 /* Siderbar for mobile version */
 
 @media screen and (min-width: 770px) {

@@ -39,12 +39,20 @@ function Sidebar() {
             </section>
               <div className="arrow"></div>
             <section className="nav-list">
-              <h2>Our product</h2>
-              <span>What we built</span>
-              <p>
-              We visualize the impact climate change has on our planet with a web-application 
-              that makes planet data easily accessible and visually attractive for users. 
-              </p>
+              <h2>Legend</h2>
+              <span>A color circle point map that marks cities in the world</span>
+              <div className="legend">
+              <div className="legend-title">The temperature change on our map</div>
+              <div className="legend-scale">
+               <ul className="legend-labels">
+                <li><span className="span-1"></span>0 - 20%</li>
+                <li><span className="span-2"></span>40%</li>
+                <li><span className="span-3"></span>60%</li>
+                <li><span className="span-4"></span>80%</li>
+                <li><span className="span-5"></span>100%</li>
+               </ul>
+              </div>
+              </div>
             </section>
             <section className="nav-list">
               <h2>How To</h2>
