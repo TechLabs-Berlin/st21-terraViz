@@ -63,7 +63,7 @@ const Map = (props) => {
      
 
     // Disable zooming on the map
-    // defaultMap.scrollZoom.disable();
+    defaultMap.scrollZoom.disable();
 
     //Fetch .json file and load the data as circle layer
     defaultMap.on("load", function () {

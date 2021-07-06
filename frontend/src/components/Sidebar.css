@@ -119,12 +119,24 @@
 
 /* Legend css */
 
+.legend {
+  display: flex;
+  flex-direction: column;
+}
+.legend-radius {
+  font-style: none;
+}
+
 .legend .legend-title {
-    text-align: left;
+    text-align: center;
     margin: 15px 0;
     font-weight: bold;
-    font-size: 90%;
+    font-size: 95%;
     }
+
+  .legend-scale {
+    align-self: center;
+  }
 
   .legend .legend-scale ul {
     margin: 0;
@@ -137,10 +149,10 @@
     display: block;
     float: left;
     width: 30px;
-    padding: 12px;
+    padding: 5px;
     margin-bottom: 6px;
     text-align: center;
-    font-size: 80%;
+    font-size: 70%;
     list-style: none;
     }
 
@@ -148,28 +160,36 @@
     display: block;
     border-radius: 50%;
     float: left;
-    height: 30px;
-    width: 30px;
+    height: 28px;
+    width: 28px;
     }
  
 
-  .span-1 {
-    background-color: #25A5E1;
+  .circle-1 {
+    background-color: #146B93;
   }
-  .span-2 {
-    background-color: #A1D4EC;
-  }
-
-  .span-3 {
-    background-color: #F5E9C8;
+  .circle-2 {
+    background-color: #72C5EC;
   }
 
-  .span-4 {
-    background-color: #F29488;
+  .circle-3 {
+    background-color: #A6DAF3;
   }
 
- .span-5 {
-   background-color: #FA382C;
+  .circle-4 {
+    background-color: #FFF6F5;
+  }
+
+ .circle-5 {
+   background-color: #FDACA8;
+ }
+
+ .circle-6 {
+   background-color: #FC7F79;
+ }
+
+ .circle-7 {
+   background-color: #B90E05;
  }
 
 
