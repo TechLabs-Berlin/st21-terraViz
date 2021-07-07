@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+
 import "./Sidebar.css";
 
 function Sidebar() {
@@ -61,6 +62,22 @@ function Sidebar() {
                  <p>Displaying different color circles with the percentage of the temperature change.
                The bigger the radius, the bigger the temperature change. </p> 
               </div>
+            </section>
+             <section className="nav-list">
+              <h2>Analysis</h2>
+              <h4>Heating up</h4>
+              <p>
+             Sliding through the time from 1900 until 2013 shows the immersive effects of climate change already present in todays world - and especially, how they’re getting more severe by time. </p>
+             <p>In the first half of the twentieth century, warmer periods are followed by colder ones in quite a constant exchange. With the end of WWII, the situation begins to worsen. Less colder periods occur. 
+             Warmer periods start to dominate. The last period of cooling temperatures ends somewhat around 1942. From that point onwards, there’s only one way on the temperature scale: upwards. </p>
+             <p>By 2013, there are only very few blue dots left, somewhere in continental Asia. 
+             The rest appears in dark red, signalling a temperature increase of more than 7.5% over the course of 100 years. In fact, the average temperature increase across all locations in 2013 is at almost 14%. 
+             Only in 7 years of the 113 year timespan, the world is cooling down on average. All of these years occur before 1942. There’s an alarming trend apparent.
+              </p>
+            <img className="data_graph" src="./image/sidebar_graph.png" alt="data_graph" />
+            <h4>Different areas, different heat</h4>
+            <p>The closer one gets to the equator, the more stable the climate is. Temperature is more volatile at locations of higher proximity to the poles. While this means that there are more periods of cooling down here, it also means that the heat is more severe - with enormous consequences for world climate. </p>
+            <p>The poles act as a natural air conditioning - their faster disappearance causes severe damage to the balance of the worldwide climate system. </p>
             </section>
             <section className="nav-list">
               <h2>About us</h2>
