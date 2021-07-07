@@ -78,7 +78,6 @@
 .nav-container {
   height: 100vh;
   margin: 20px 15px;
-  padding-bottom: 40px;
 }
 
 .nav-list {
@@ -86,8 +85,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 20px 0;
   color: #fff;
+  padding-bottom: 20px;
 }
 
 .nav-list h2 {
@@ -115,6 +114,12 @@
   color: #fff;
   font-size: 2.2rem;
   font-weight: 500;
+}
+
+.copyright {
+  align-self: center;
+  color: #b4c3ce;
+  font-size: 0.9rem;
 }
 
 /* Legend css */

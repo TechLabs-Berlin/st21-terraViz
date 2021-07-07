@@ -34,7 +34,8 @@ function Sidebar() {
               <p>
               Climate change is the largest problem of humanity.
               Making the future of our planet tangible is one of the psychological barriers 
-              that have made climate change into an elusive problem.  
+              that have made climate change into an elusive problem. 
+              Since one of the major effects of climate change is temperature change, approaching with temperature change was decided for the project.
               </p>
             </section>
               <div className="arrow"></div>
@@ -54,8 +55,7 @@ function Sidebar() {
                 <li><span className="circle-7"></span>7.5%</li>
                </ul>
               </div>
-             
-               <div className="legend-title">Summary of the legend</div>
+
                  <p>In the following legend the temperature changes are displayed as a percentage change of the yearly temperatures starting from 1902 to a base that is always the same for each city. 
                The base value is calculated as the average temperature of each city from 1892 to 1901.</p>
                  <p>Displaying different color circles with the percentage of the temperature change.
@@ -63,14 +63,19 @@ function Sidebar() {
               </div>
             </section>
             <section className="nav-list">
-              <h2>How To</h2>
-              <span>How the app works</span>
+              <h2>About us</h2>
+              <span>We are TerraViz</span>
               <p>
-              We visualize the impact climate change has on our planet with a web-application 
+              TerraViz is an interactive map visualization web-app that shows the immediate effects of climate change. 
+              We visualize the impact of climate change with a web-application 
               that makes planet data easily accessible and visually attractive for users.
-              We visualize the impact climate change has on our planet with a web-application 
-              that makes planet data easily accessible and visually attractive for users.
+              Our vision is to make climate change tangible!
               </p>
+            </section>
+            <section className="nav-list">
+            <div class="copyright">
+                <p>© TerraViz 2021</p>  
+            </div>
             </section>
          </div>
         </div>
