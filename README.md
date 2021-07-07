@@ -14,16 +14,16 @@ TerraViz is an interactive map visualization web-app that shows the immediate ef
 
 # Table of content
 
-- [ℹ️ About the Project](#about-the-project)
+- [ℹ️ About the Project](#ℹ️ about-the-project)
     + [Background](#background)
     + [The team](#the-team)
     + [How we organized](#how-we-organized)
-- [💡 The Product](#the-product)
+- [💡 The Product](#💡 the-product)
     + [Why](#why)
     + [How](#how)
     + [What we see](#what-we-see)
-- [🚀 Installation Guide](#installation-guide)
-- [💫 Deployment](#deployment)
+- [🚀 Installation Guide](#🚀 installation-guide)
+- [💫 Deployment](#💫 deployment)
 
 
 # ℹ️ About the Project
