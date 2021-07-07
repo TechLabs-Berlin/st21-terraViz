@@ -18,6 +18,14 @@ TerraViz is an interactive map visualization web-app that shows the immediate ef
 This project evolved inside TechLabs: A learning accelerator for technology skills. 
 In a 4 months blended learning journey young individuals learn state-of-the-art tech skills and apply them in a group project. 
 
+### The team
+
+- DS Bastian van der Put
+- DS Florian Deters
+- DS Lukas Hoppe
+- WD Seong-eun Kim
+- WD Timea Varju
+
 ### How we organized
 
 - [Figma](https://www.figma.com/file/uyEfyUXFVq3lGNKsXDZsAD/Design?node-id=201%3A120) - We used Figma for our initial exploration and ideation phase and later on for our styleguide and high-fidelity design.
@@ -27,6 +35,9 @@ In a 4 months blended learning journey young individuals learn state-of-the-art 
 Figma            |  Notion         |  Slack
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a4df2a14-3e82-4b0f-a21f-bc7792242e4e/Frame_34.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210707T222043Z&X-Amz-Expires=86400&X-Amz-Signature=ddba73dd676d373e8cc7b3a81dcaa18d92eff5929f07a7c66a10e4b14cfc7a66&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Frame_34.jpg%22)|![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/05ccd8ef-a5ad-40cc-8877-baf8024a24ee/Frame_35.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210707T222430Z&X-Amz-Expires=86400&X-Amz-Signature=1ade77bca6ec5c7fe37cd3b053db729415b7efd6a979e3e54e1f9bae378339dd&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Frame_35.jpg%22)|![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6a9b43ca-dd9d-4097-88e7-78bbb381137e/Frame_36.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210707T222510Z&X-Amz-Expires=86400&X-Amz-Signature=bd3cb6d18a05bcb59b9a96c36b0a82e80891131a1b3ae7ef6743040797560cd7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Frame_36.jpg%22)
+
+###Why
+Our first approach was to display past and present occurring wildfires as an immediate result of climate change. However, we then decided to tackle the overarching problem itself - Climate Warming - to increase awareness by displaying the severity of it. Thus, we created a web application that displays the global temperature development over the past century.
 
 
 ## 🚀 Get the project up and running
@@ -76,11 +87,3 @@ Figma            |  Notion         |  Slack
 The site is deployed on [Netlify](https://dreamy-lewin-096330.netlify.app/)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
-
-## The team
-
-- DS Bastian van der Put
-- DS Florian Deters
-- DS Lukas Hoppe
-- WD Seong-eun Kim
-- WD Timea Varju
