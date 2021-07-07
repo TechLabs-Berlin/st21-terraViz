@@ -36,8 +36,25 @@ Figma            |  Notion         |  Slack
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a4df2a14-3e82-4b0f-a21f-bc7792242e4e/Frame_34.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210707T222043Z&X-Amz-Expires=86400&X-Amz-Signature=ddba73dd676d373e8cc7b3a81dcaa18d92eff5929f07a7c66a10e4b14cfc7a66&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Frame_34.jpg%22)|![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/05ccd8ef-a5ad-40cc-8877-baf8024a24ee/Frame_35.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210707T222430Z&X-Amz-Expires=86400&X-Amz-Signature=1ade77bca6ec5c7fe37cd3b053db729415b7efd6a979e3e54e1f9bae378339dd&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Frame_35.jpg%22)|![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6a9b43ca-dd9d-4097-88e7-78bbb381137e/Frame_36.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210707T222510Z&X-Amz-Expires=86400&X-Amz-Signature=bd3cb6d18a05bcb59b9a96c36b0a82e80891131a1b3ae7ef6743040797560cd7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Frame_36.jpg%22)
 
-###Why
-Our first approach was to display past and present occurring wildfires as an immediate result of climate change. However, we then decided to tackle the overarching problem itself - Climate Warming - to increase awareness by displaying the severity of it. Thus, we created a web application that displays the global temperature development over the past century.
+### Why 
+We depicted, that making the future of our planet tangible is one of the psychological barriers that have made climate change into an elusive problem. People fail to call for immediate action, because they can’t see and feel the immediate effects of it: Climate change is too abstract, too far away.
+
+### How
+Thus, our vision was to make climate tangible and build something that would clearly show how our planet is getting warmer every year. 
+Our first approach was to display past and present occurring wildfires as an immediate result of climate change. However, we then decided to tackle the overarching problem itself - Climate Warming - to increase awareness by displaying the severity of it. Thus, we created a web application that displays the global temperature development over the past century. With an interactive map visualization we show climate warning for all major cities around the world. 
+
+### What we see
+
+**Heating Up**
+
+Sliding through the time from 1900 until 2013 shows the immersive effects of climate change already present in todays world - and especially, how they’re getting more severe by time.
+In the first half of the twentieth century, warmer periods are followed by colder ones in quite a constant exchange. With the end of WWII, the situation begins to worsen. Less colder periods occur. Warmer periods start to dominate. The last period of cooling temperatures ends somewhat around 1942. From that point onwards, there’s only one way on the temperature scale: upwards.
+By 2013, there are only very few blue dots left, somewhere in continental Asia. The rest appears in dark red, signalling a temperature increase of more than 7.5% over the course of 100 years. In fact, the average temperature increase across all locations in 2013 is at almost 14%.
+Only in 7 years of the 113 year timespan, the world is cooling down on average. All of these years occur before 1942. There’s an alarming trend apparent.
+
+**Different areas, different heat**
+
+The closer one gets to the equator, the more stable the climate is. Temperature is more volatile at locations of higher proximity to the poles. While this means that there are more periods of cooling down here, it also means that the heat is more severe - with enormous consequences for world climate. The poles act as a natural air conditioning - their faster disappearance causes severe damage to the balance of the worldwide climate system.
 
 
 ## 🚀 Get the project up and running
