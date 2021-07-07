@@ -22,8 +22,8 @@ TerraViz is an interactive map visualization web-app that shows the immediate ef
     + [Why](#why)
     + [How](#how)
     + [What we see](#what-we-see)
-- [🚀 Installation Guide](#---installation-guide)
-- [💫 Deployment](#---deployment)
+- [🚀 Installation Guide](#installation-guide)
+- [💫 Deployment](#deployment)
 
 
 # ℹ️ About the Project
