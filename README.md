@@ -25,6 +25,12 @@ TerraViz is an interactive map visualization web-app that shows the immediate ef
 - [🚀 Installation Guide](#installation-guide)
 - [💫 Deployment](#deployment)
 
+**Quick Links**
+[Blogpost](https://medium.com/)
+[Website](https://dreamy-lewin-096330.netlify.app/)
+[Project Managment](https://www.notion.so/Terraviz-Home-5fe70621427741c1903d0ef491c16f95)
+
+
 
 # About the Project
 
