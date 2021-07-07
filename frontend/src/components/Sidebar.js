@@ -56,7 +56,7 @@ function Sidebar() {
                </ul>
               </div>
 
-                 <p>In the following legend the temperature changes are displayed as a percentage change of the yearly temperatures starting from 1902 to a base that is always the same for each city. 
+                 <p>The temperature changes are displayed as a percentage change of the yearly temperatures starting from 1902 to a base that is always the same for each city. 
                The base value is calculated as the average temperature of each city from 1892 to 1901.</p>
                  <p>Displaying different color circles with the percentage of the temperature change.
                The bigger the radius, the bigger the temperature change. </p> 
