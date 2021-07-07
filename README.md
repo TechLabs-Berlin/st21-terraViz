@@ -56,13 +56,11 @@ Only in 7 years of the 113 year timespan, the world is cooling down on average. 
 
 The closer one gets to the equator, the more stable the climate is. Temperature is more volatile at locations of higher proximity to the poles. While this means that there are more periods of cooling down here, it also means that the heat is more severe - with enormous consequences for world climate. The poles act as a natural air conditioning - their faster disappearance causes severe damage to the balance of the worldwide climate system.
 
+---
 
 ## 🚀 Get the project up and running
 
 1.  **Clone repo.**
-
-    Run:
-
     ```shell
     git clone https://github.com/TechLabs-Berlin/st21-terraViz
     ```
