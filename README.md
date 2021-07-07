@@ -14,8 +14,19 @@ TerraViz is an interactive map visualization web-app that shows the immediate ef
 
 ## About the Project
 
-This project evolved inside TechLabs: A learning accelerator for technology skills. In a 4 months blended learning journey young individuals learn state-of-the-art tech skills and apply them in a group project. 
+### Background
+This project evolved inside TechLabs: A learning accelerator for technology skills. 
+In a 4 months blended learning journey young individuals learn state-of-the-art tech skills and apply them in a group project. 
 
+### How we organized
+
+- [Figma](https://www.figma.com/file/uyEfyUXFVq3lGNKsXDZsAD/Design?node-id=201%3A120) - We used Figma for our initial exploration and ideation phase and later on for our styleguide and high-fidelity design.
+- [Notion](https://www.notion.so/Terraviz-Home-5fe70621427741c1903d0ef491c16f95) - We used Notion to structure and manage our product development process. There, we always had access to our most important links, collected the ressources we would need and we had a place to write our updates and about our project. 
+- [Slack](https://slack.com/) - The TechLabs community uses Slack for everyday communication. Hence, we had our own group in which we shared project status, split work and discussed designs, tech implementations and product decisions. 
+
+Solarized dark             |  Solarized Ocean          |  Solarized Ocean
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a4df2a14-3e82-4b0f-a21f-bc7792242e4e/Frame_34.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210707T222043Z&X-Amz-Expires=86400&X-Amz-Signature=ddba73dd676d373e8cc7b3a81dcaa18d92eff5929f07a7c66a10e4b14cfc7a66&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Frame_34.jpg%22)  |  ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a4df2a14-3e82-4b0f-a21f-bc7792242e4e/Frame_34.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210707T222043Z&X-Amz-Expires=86400&X-Amz-Signature=ddba73dd676d373e8cc7b3a81dcaa18d92eff5929f07a7c66a10e4b14cfc7a66&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Frame_34.jpg%22)
 
 
 ## 🚀 Get the project up and running
