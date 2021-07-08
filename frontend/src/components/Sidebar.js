@@ -40,6 +40,7 @@ function Sidebar() {
               Since one of the major effects of climate change is temperature change, approaching with temperature change was decided for the project.
               </p>
             </section>
+          
               <div className="arrow"></div>
             <section className="nav-list">
               <h2>Legend</h2>
