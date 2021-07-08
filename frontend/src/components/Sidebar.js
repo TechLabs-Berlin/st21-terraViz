@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+import data_graph from "../assets/sidebar_graph.png"
 
 import "./Sidebar.css";
 
@@ -75,7 +76,7 @@ function Sidebar() {
              The rest appears in dark red, signalling a temperature increase of more than 7.5% over the course of 100 years. In fact, the average temperature increase across all locations in 2013 is at almost 14%. 
              Only in 7 years of the 113 year timespan, the world is cooling down on average. All of these years occur before 1942. There’s an alarming trend apparent.
               </p>
-            <img className="data_graph" src="./image/sidebar_graph.png" alt="data_graph" />
+            <img className="data_graph" src={data_graph} alt="data_graph" />
             <h4>Different areas, different heat</h4>
             <p>The closer one gets to the equator, the more stable the climate is. Temperature is more volatile at locations of higher proximity to the poles. While this means that there are more periods of cooling down here, it also means that the heat is more severe - with enormous consequences for world climate. </p>
             <p>The poles act as a natural air conditioning - their faster disappearance causes severe damage to the balance of the worldwide climate system. </p>
