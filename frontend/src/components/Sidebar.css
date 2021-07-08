@@ -3,13 +3,13 @@
   width: 350px;
   height: 100vh;
   /* box-sizing: border-box; */
-  bottom: 30px;
+  bottom: 25px;
   display: flex;
   justify-content: center;
   position: absolute;
   z-index: 1;
   opacity: 1;
-  background: linear-gradient(to right, #183855 100%, #254a6b 0%);
+  background: linear-gradient(to right, #183855 100%, #254a6b);
   font-family: "Rubik";
   overflow-y: scroll;
   border-radius: 8px;
@@ -78,7 +78,6 @@
 .nav-container {
   height: 100vh;
   margin: 20px 15px;
-  padding-bottom: 40px;
 }
 
 .nav-list {
@@ -86,8 +85,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 20px 0;
   color: #fff;
+  padding-bottom: 20px;
 }
 
 .nav-list h2 {
@@ -103,6 +102,9 @@
   font-style: oblique;
 }
 
+.nav-list h4 {
+  margin: 20px 0 0 0;
+}
 /* Sidebar title */
 .title {
   display: flex;
@@ -117,6 +119,92 @@
   font-weight: 500;
 }
 
+.copyright {
+  align-self: center;
+  color: #b4c3ce;
+  font-size: 0.9rem;
+}
+
+.data_graph {
+  width: 300px;
+  height: 200px;
+  align-self: center;
+}
+
+/* Legend css */
+
+.legend {
+  display: flex;
+  flex-direction: column;
+}
+.legend-radius {
+  font-style: none;
+}
+
+.legend .legend-title {
+  text-align: center;
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 95%;
+}
+
+.legend-scale {
+  align-self: center;
+}
+
+.legend .legend-scale ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+}
+
+.legend .legend-scale ul li {
+  display: block;
+  float: left;
+  width: 30px;
+  padding: 5px;
+  margin-bottom: 6px;
+  text-align: center;
+  font-size: 70%;
+  list-style: none;
+}
+
+.legend ul.legend-labels li span {
+  display: block;
+  border-radius: 50%;
+  float: left;
+  height: 28px;
+  width: 28px;
+}
+
+.circle-1 {
+  background-color: #146b93;
+}
+.circle-2 {
+  background-color: #72c5ec;
+}
+
+.circle-3 {
+  background-color: #a6daf3;
+}
+
+.circle-4 {
+  background-color: #fff6f5;
+}
+
+.circle-5 {
+  background-color: #fdaca8;
+}
+
+.circle-6 {
+  background-color: #fc7f79;
+}
+
+.circle-7 {
+  background-color: #b90e05;
+}
+
 /* Siderbar for mobile version */
 
 @media screen and (min-width: 770px) {
@@ -129,6 +217,10 @@
   .nav {
     width: 300px;
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 770px) {
@@ -177,7 +269,7 @@ To the Map (mobile version toggle) */
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     padding: 0 10px;
   }
 
@@ -186,7 +278,7 @@ To the Map (mobile version toggle) */
     opacity: 1;
     border-radius: 20px;
     margin: 0 10px 130px 10px;
-    padding: 15px;
+    padding: 20px;
   }
 
   .nav-list h2 {

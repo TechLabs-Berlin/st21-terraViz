@@ -1,13 +1,21 @@
 import React, { useState } from "react";
-import { IoIosPlay, IoIosPause } from "react-icons/io";
+import { IoIosPlay, IoIosPause, IoIosRedo } from "react-icons/io";
 import "./TimeSlider.css";
 
-const PLAY_SPEED = 100;
+const PLAY_SPEED = 500;
 
 const TimeSlider = (props) => {
   const { currentYear, setCurrentYear } = props;
   const [startCounterId, setStartCounterId] = useState(null);
   const [playButton, setPlayButton] = useState(true);
+
+  const resetSlider = () => {
+    clearInterval(startCounterId);
+    setStartCounterId(null);
+    setPlayButton(true);
+    setCurrentYear(1902);
+  }
+
 
   const onTogglePlayButton = () => {
     setPlayButton(!playButton);
@@ -21,7 +29,7 @@ const TimeSlider = (props) => {
         setCurrentYear((currentYear) => {
           if (currentYear === 2013) {
             clearInterval(startCounterId);
-            setPlayButton(true);
+            setPlayButton(false);
             return currentYear;
           }
           return currentYear + 1;
@@ -40,14 +48,14 @@ const TimeSlider = (props) => {
       <div className="slider-wrapper">
         <input
           type="range"
-          min="1750"
+          min="1902"
           max="2013"
           className="slider-range"
           value={currentYear}
           onChange={(e) => setCurrentYear(parseInt(e.target.value))}
         />
         <div className="label-wrapper">
-          <div className="label-left">1750</div>
+          <div className="label-left">1902</div>
           <div className="label-right">2013</div>
         </div>
       </div>
@@ -59,6 +67,8 @@ const TimeSlider = (props) => {
         <IoIosPause
           className={playButton ? "button-hidden" : "play-pause-button"}
         />
+      </button>
+      <button onClick={resetSlider} className="button-container"><IoIosRedo className = "play-pause-button" />
       </button>
 
       <div className="current-date">{currentYear}</div>

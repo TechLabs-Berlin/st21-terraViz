@@ -7,30 +7,38 @@ mapboxgl.accessToken =
   "pk.eyJ1IjoidGVycmF2aXoiLCJhIjoiY2twbW9ldG5vMGsyeDJ3cXF2eTBtNmozaSJ9.cuNhWme-R-RK02H3qWxHWw";
 
 const COLOR_TEMP = {
-  negativeBig: 3,
-  negative: 7,
-  base: 10,
-  positive: 11,
-  positiveBig: 15,
+  negativeBiggest: -0.075,
+  negativeBigger: -0.05,
+  negativeBig: -0.025,
+  negative: -0.01,
+  base: 0,
+  positive: 0.01,
+  positiveBig: 0.025,
+  positiveBigger: 0.05,
+  positiveBiggest: 0.075,
 };
 
 const COLOR_HEX = {
-  negativeBig: "#7BBAD8",
-  negative: "#A1D4EC",
-  base: "#F5E9C8",
-  positive: "#F29488",
-  positiveBig: "#E86A62",
+  negativeBiggest: "#146B93",
+  negativeBigger: "#25A5E1",
+  negativeBig: "#72C5EC",
+  negative: "#A6DAF3",
+  base: "#FFF6F5",
+  positive: "#FDACA8",
+  positiveBig: "#FC7F79",
+  positiveBigger: "#FA382C",
+  positiveBiggest: "#B90E05",
 };
 
 const RADIUS_TEMP = {
-  low: 3,
-  base: 10,
-  high: 15,
+  low: -0.075,
+  base: 0,
+  high: 0.075,
 };
 
 const RADIUS_SIZE = {
-  base: 5,
-  change: 25,
+  base: 3,
+  change: 6,
 };
 
 // Main component
@@ -49,22 +57,22 @@ const Map = (props) => {
     const defaultMap = new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/terraviz/ckpmos6qm1n9t17m4a1r2j3tj",
-      center: [17, 30],
-      zoom: 1,
-      interactive: false,
+      center: [-32, 20],
+      zoom: 1.3,
     });
 
     // Disable zooming on the map
-    // defaultMap.scrollZoom.disable();
+    defaultMap.scrollZoom.disable();
 
     //Fetch .json file and load the data as circle layer
     defaultMap.on("load", function () {
-      fetch("export_countries.json")
+      fetch("ByCityDataset_Sliced.json")
         .then((res) => res.json())
         .then((data) => {
           defaultMap.addSource("point", {
             type: "geojson",
             data: data,
+            buffer: 0,
           });
 
           defaultMap.addLayer({
@@ -76,6 +84,8 @@ const Map = (props) => {
                 "interpolate",
                 ["linear"],
                 ["get", "temp"],
+                COLOR_TEMP.negativeBiggest,
+                COLOR_HEX.negativeBiggest,
                 COLOR_TEMP.negativeBig,
                 COLOR_HEX.negativeBig,
                 COLOR_TEMP.negative,
@@ -86,6 +96,8 @@ const Map = (props) => {
                 COLOR_HEX.positive,
                 COLOR_TEMP.positiveBig,
                 COLOR_HEX.positiveBig,
+                COLOR_TEMP.positiveBiggest,
+                COLOR_HEX.positiveBiggest,
               ],
               "circle-opacity": 0.8,
               "circle-radius": [
