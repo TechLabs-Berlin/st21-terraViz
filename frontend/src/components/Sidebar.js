@@ -65,6 +65,7 @@ function Sidebar() {
             </section>
              <section className="nav-list">
               <h2>Analysis</h2>
+              <span>The result of data analysis</span>
               <h4>Heating up</h4>
               <p>
              Sliding through the time from 1900 until 2013 shows the immersive effects of climate change already present in todays world - and especially, how they’re getting more severe by time. </p>
@@ -90,7 +91,7 @@ function Sidebar() {
               </p>
             </section>
             <section className="nav-list">
-            <div class="copyright">
+            <div className="copyright">
                 <p>© TerraViz 2021</p>  
             </div>
             </section>

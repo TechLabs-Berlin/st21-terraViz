@@ -102,6 +102,9 @@
   font-style: oblique;
 }
 
+.nav-list h4 {
+  margin: 20px 0 0 0;
+}
 /* Sidebar title */
 .title {
   display: flex;
@@ -125,6 +128,7 @@
 .data_graph {
   width: 300px;
   height: 200px;
+  align-self: center;
 }
 
 /* Legend css */
