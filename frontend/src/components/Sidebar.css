@@ -217,10 +217,10 @@
   .nav {
     width: 300px;
   }
-}
 
-::-webkit-scrollbar {
-  display: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 770px) {
