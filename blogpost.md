@@ -1,8 +1,8 @@
 [Introduction](#introduction)</br>
 [Data Science track](#data-science-track)</br>
 [Web Development track](#web-development-track)</br>
-[Final thoughts](#final-thoughts)</br>
-
+<!-- [Final thoughts](#final-thoughts)</br>
+ -->
 ## Introduction
 
 TerraViz is an interactive map visualization web-app that shows the immediate effects of climate change. Our team is composed of Kim and Timea, as web developers, and Florian, Lukas, and Bastian, as data scientists.
