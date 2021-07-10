@@ -10,7 +10,7 @@
 
 TerraViz is an interactive map visualization web-app that shows the immediate effects of climate change. Our vision is to make climate change tangible!
 
-![TerraViz Map](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ca1c3a15-c2a9-445a-8a43-87761437536a/Screenshot_2021-07-07_at_23.47.30.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210707%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210707T214758Z&X-Amz-Expires=86400&X-Amz-Signature=cb8147a95d7955879f4b127ca1e6e8ca162e7fa3b76c42d901c25f52e99e08b3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Screenshot_2021-07-07_at_23.47.30.png%22)
+![TerraViz Map](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/images/image-map-global.png)
 
 # Table of content
 
