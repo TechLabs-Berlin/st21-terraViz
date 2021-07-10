@@ -57,12 +57,12 @@ const Map = (props) => {
     const defaultMap = new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/terraviz/ckpmos6qm1n9t17m4a1r2j3tj",
-      center: [-50, 25],
-      zoom: 1,
+      center: [-32, 20],
+      zoom: 1.3,
     });
 
     // Disable zooming on the map
-    // defaultMap.scrollZoom.disable();
+    defaultMap.scrollZoom.disable();
 
     //Fetch .json file and load the data as circle layer
     defaultMap.on("load", function () {
