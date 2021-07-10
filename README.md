@@ -17,6 +17,7 @@ TerraViz is an interactive map visualization web-app that shows the immediate ef
 - [ℹ️ About the Project](#about-the-project)
     + [Background](#background)
     + [The team](#the-team)
+    + [Dataset](#dataset)
     + [How we organized](#how-we-organized)
 - [💡 The Product](#the-product)
     + [Why](#why)
@@ -26,7 +27,7 @@ TerraViz is an interactive map visualization web-app that shows the immediate ef
 - [💫 Deployment](#deployment)
 
 **Quick Links**
-- [Blogpost](https://medium.com/)
+- [Blogpost](https://github.com/TechLabs-Berlin/st21-terraViz/blob/main/blogpost.md)
 - [Website](https://dreamy-lewin-096330.netlify.app/)
 
 # About the Project
@@ -37,11 +38,15 @@ In a 4 months blended learning journey young individuals learn state-of-the-art 
 
 ### The team
 
-- DS Bastian van der Put
-- DS Florian Deters
-- DS Lukas Hoppe
-- WD Seong-eun Kim
-- WD Timea Varju
+- DS [Bastian van der Put](https://github.com/CodingBastian)
+- DS [Florian Deters](https://github.com/floriandeters)
+- DS [Lukas Hoppe](https://github.com/lukasjoho)
+- WD [Seong-eun Kim](https://github.com/seongeunkimmy)
+- WD [Timea Varju](https://github.com/Moomia)
+
+### Dataset
+
+- [Climate Change: Earth Surface Temperature Data by Berkeley Earth](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data)
 
 ### How we organized
 
