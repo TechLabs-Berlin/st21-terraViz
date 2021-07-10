@@ -15,7 +15,7 @@ const TimeSlider = (props) => {
     setPlayButton(true);
     setCurrentYear(1902);
   }
-
+ 
 
   const onTogglePlayButton = () => {
     setPlayButton(!playButton);
