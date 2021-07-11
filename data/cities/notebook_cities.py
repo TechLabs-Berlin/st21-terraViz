@@ -18,6 +18,7 @@ df = df.drop(columns=['AverageTemperatureUncertainty'])
 df.tail()
 
 df = df.loc['1900-01-01':, :]
+
 # Calculate the average yearly temperature for each city and each year
 # old way
 cities = df.City.unique()
@@ -119,20 +120,17 @@ df_final.columns = ['year', 'lat', 'lon', 'temp']
 # drop nan values
 df_final.dropna(axis=0, how='any', inplace=True)
 
-df_final.info()
-
 # create a subset for testing purposes
 countries_subset = ['Berlin', 'London', 'Tokio', 'Seoul',
                     'Paris', 'Los Angeles', 'New York', 'Buenos Aires']
 df_subset = df_final[df_final.city.isin(countries_subset)]
 
 
-# data = df_to_geojson(
-#     df_final,
-#     properties=['temp', 'year'],
-#     lat='lat',
-#     lon='lon',
-#     precision=4,
-#     filename='ByCityDataset_Sliced.json'
-# )
-df_final.to_json("cities.json")
+data = df_to_geojson(
+    df_final,
+    properties=['temp', 'year'],
+    lat='lat',
+    lon='lon',
+    precision=4,
+    filename='cities_final.json'
+)
