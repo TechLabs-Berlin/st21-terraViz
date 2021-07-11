@@ -125,7 +125,7 @@ countries_subset = ['Berlin', 'London', 'Tokio', 'Seoul',
                     'Paris', 'Los Angeles', 'New York', 'Buenos Aires']
 df_subset = df_final[df_final.city.isin(countries_subset)]
 
-
+# Save the file as a json in the appropriate format
 data = df_to_geojson(
     df_final,
     properties=['temp', 'year'],
