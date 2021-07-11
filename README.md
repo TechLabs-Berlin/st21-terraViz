@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://dreamy-lewin-096330.netlify.app/">
-    <img alt="logo" src="https://github.com/TechLabs-Berlin/st21-terraViz/blob/main/frontend/src/assets/TerraViz%20Logo%20Black.png" width="60" />
+    <img alt="logo" src="https://github.com/TechLabs-Berlin/st21-terraViz/blob/main/assets/images/image-logo-white.png" width="60" />
   </a>
 </p>
 <h1 align="center">
