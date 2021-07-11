@@ -25,6 +25,7 @@ TerraViz is an interactive map visualization web-app that shows the immediate ef
     + [What we see](#what-we-see)
 - [🚀 Installation Guide](#installation-guide)
 - [💫 Deployment](#deployment)
+- [📁 Repository Structure](#repository-structure)
 
 **Quick Links**
 - [Blogpost](https://github.com/TechLabs-Berlin/st21-terraViz/blob/main/blogpost.md)
@@ -125,5 +126,10 @@ The closer one gets to the equator, the more stable the climate is. Temperature 
 ## Deployment
 
 The site is deployed on [Netlify](https://dreamy-lewin-096330.netlify.app/)
+
+## Repository Structure
+
+- `main`: development branch
+- `live`: production branch
 
 <!-- AUTO-GENERATED-CONTENT:END -->
