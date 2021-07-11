@@ -21,7 +21,7 @@ The data comes in different location categories. There is one for Cities (entail
 
 Exploring the data, we figured that not all years are as detailedly measured. Especially in the beginning, a large amount of data is missing:
 
-![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/dataviz.png)
+![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/images/image-dataviz.png)
 
 Overall, the data is somewhat noisy up until about 1880. From this point onwards, most data is available. Thus, our first take was to focus on these years. Moreover, the largest part of data missing for one specific city was 38% cumulated across all years - a lot for this single city, but still to much valuable information to drop. Thus, we decided on not ruling out total cities from the data. Apart from that, we found out that the Cities-dataset contains not only data for about 3,500 cities, but also for 159 countries - it was therefore reasonable to assume that we can get quite a wholesome world view with this dataset.
 
@@ -71,15 +71,15 @@ Sliding through the time from 1900 until 2013 shows the immersive effects of cli
 
 | The first half of the 20th century, warmer periods are followed by colder ones in quite a constant exchange                                                                                                                                                                                                                                                                                                                                                      |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/1914-final.png) |
+| ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/images/image-1914-final.png) |
 
 | Cooling of Europe during World War II                                                                                                                                                                                                                                                                                                                                                                                                                |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/1941.png) |
+| ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/image-1941.png) |
 
 | By 2013 the average temperature increase across all locations is at almost 14%                                                                                                                                                                                                                                                                                                                                                                                   |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/2013-final.png) |
+| ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/images/image-2013-final.png) |
 
 ## Web Development track
 
@@ -101,7 +101,7 @@ We would represent the temperature anomalies with colored circles, year by year 
 - positive small change (e.g. +1.0C) - light salmon color,
 - positive bigger change (e.g. +2.0C) - darker salmon/coral color.
 
-![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/mvp.png)
+![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/images/image-mvp.png)
 
 ### Iterations
 
@@ -113,7 +113,7 @@ At this stage the app was not functional, the components were visually there but
 
 | v1 desktop version                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | v1 mobile version                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/web-previous.png) | ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/Screenshot%202021-06-19%20142953.png) |
+| ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/images/image-web-previous.png) | ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/images/image-devtools-view.png) |
 
 #### V2
 
@@ -121,7 +121,7 @@ We further refined the design with custom scrollbar and minor UI adjustments, an
 
 | final finished desktop version                                                                                                                                                                                                                                                                                                                                                                                                                                               | finished mobile version                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/final-screenshot.jpg) | ![](https://github.com/TechLabs-Berlin/st21-terraViz/blob/main/assets/mobile-final.png) |
+| ![](https://raw.githubusercontent.com/TechLabs-Berlin/st21-terraViz/main/assets/images/image-final-screenshot.jpg) | ![](https://github.com/TechLabs-Berlin/st21-terraViz/blob/main/assets/images/image-mobile-final.png) |
 
 ### Problems
 
