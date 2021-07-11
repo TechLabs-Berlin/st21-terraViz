@@ -44,6 +44,14 @@ In a 4 months blended learning journey young individuals learn state-of-the-art 
 - WD [Seong-eun Kim](https://github.com/seongeunkimmy)
 - WD [Timea Varju](https://github.com/Moomia)
 
+### Project Desription 
+
+TerraViz was formed as the final group project of the Techlabs Digital Shaper Program, with the urge to make climate change tangible. The team's first approach was to display past and present occurring wildfires as an immediate result of climate change. However, the team decided to tackle the overarching problem itself - Climate Warming - to increase awareness by displaying its severity. Thus, TerraViz created a web application that displays the global temperature development over the past century.
+
+Throughout the project phase, the TerraViz team mainly used React, Mapbox/Mapbox GL JS(Base map), Netlify(Deployment) in the Front-End, and the programming language Python (Libraries: Numpy, Pandas, Matplotlib, and mapboxgl.utils) in the Back-End. Due to the roadblock that the team did not have a UI/ UX designer, they also used Figma for design scheme creation. 
+
+As the final result, the TerraViz team created an interactive map visualization web application that displays the drastic increase of climate warming over the last century dynamically and accurately for over 3,500 different cities in 150 different countries around the world.
+
 ### Dataset
 
 - [Climate Change: Earth Surface Temperature Data by Berkeley Earth](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data)
