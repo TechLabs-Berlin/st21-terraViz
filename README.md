@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://dreamy-lewin-096330.netlify.app/">
-    <img alt="logo" src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5a32d995-d91a-47cf-ada4-86c9ff25d4c2%2FFrame_33.png?table=block&id=5fe70621-4277-41c1-903d-0ef491c16f95&spaceId=4ac39639-2de6-4982-b445-ddf6c4c2dc44&width=250&userId=64b9480f-6c8d-4562-9a6f-49d6d9a85ee8&cache=v2" width="60" />
+    <img alt="logo" src="https://github.com/TechLabs-Berlin/st21-terraViz/blob/main/frontend/src/assets/TerraViz%20Logo%20Black.png" width="60" />
   </a>
 </p>
 <h1 align="center">
